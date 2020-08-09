@@ -192,11 +192,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* width: 32%; */
+    justify-content: space-between;
     border: 2px solid #f6f6f6;
     text-align: center;
     padding: 50px 21px;
+    margin-bottom: 10px;
 }
 
 .availability__product img {
@@ -232,10 +232,11 @@ a {
 }
 
 .adnatage {
-    width: 32%;
+    flex: 0 0 32%;
     border: 2px solid #fff;
     text-align: center;
-    padding: 35px 40px
+    padding: 35px 40px;
+    margin-bottom: 10px;
 }
 
 .adnatage:hover {
@@ -271,6 +272,7 @@ a {
     flex: 0 0 20%;
     border: 2px solid #f6f6f6;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 .popular__product-buy {
@@ -287,9 +289,10 @@ a {
 }
 
 .service {
-    width: 295px;
+    width: 300px;
     border: 2px solid #fff;
     padding: 50px 60px;
+    margin-bottom: 10px;
 }
 
 .map {
@@ -375,4 +378,55 @@ a {
 
 .footer__right {
     align-items: flex-end;
+}
+
+@media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:576px) {
+    .phone__number {
+        font-size: 14px;
+    }
+
+    .back__call {
+        font-size: 11px;
+    }
+
+    .main__menu-link {
+        font-size: 11px;
+    }
+
+    .availability__products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .availability__product {
+        width: 300px;
+    }
+
+    .advantages__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adnatage {
+        max-width: 300px;
+    }
+
+    .services__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .popular__wrapper {
+        flex-direction: column;
+    }
 }
