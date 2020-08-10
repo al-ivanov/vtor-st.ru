@@ -317,17 +317,29 @@ a {
 
 .contact__phone-block {
     margin-top: 19px;
+    display: flex;
+}
+
+.contact__phones-wrapper,
+.contact__address-name,
+.company__email {
+    margin-left: 10px;
 }
 
 .contact__phone {
     display: block;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
 
 }
 
 .contact__address, .contact__email{
     margin-top: 37px;
+}
+
+.contact__address,
+.contact__email {
+    display: flex;
 }
 
 
@@ -380,15 +392,42 @@ a {
     align-items: flex-end;
 }
 
-@media screen and (max-width:992px) {
-
+@media screen and (max-width:900px) {
+    .popular__wrapper,
+    .services__wrapper {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:768px) {
-
+    .back__call {
+        padding: 13px 5px;
+    }
 }
 
 @media screen and (max-width:576px) {
+    .logo,
+    .footer__logo {
+        width: 150px;
+    }
+
+    .phone__content {
+        font-size: 8px;
+    }
+
+    .main__banner-button {
+        padding: 20px 15px;
+        font-size: 14px;
+    }
+
+    .main__banner-text {
+        font-size: 25px;
+    }
+
+    .main__banner-catalog {
+        font-size: 11px;
+    }
+
     .phone__number {
         font-size: 14px;
     }
@@ -399,6 +438,10 @@ a {
 
     .main__menu-link {
         font-size: 11px;
+    }
+
+    .main__banner-catalog span {
+        margin: 0 10px;
     }
 
     .availability__products {
@@ -423,10 +466,55 @@ a {
         flex-direction: column;
         align-items: center;
     }
+
+    .contact__block {
+        padding: 30px;
+        width: 260px;
+        height: 300px;
+    }
+
+    .contact__address, .contact__email{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:460px) {
+    .logo,
+    .footer__logo {
+        width: 100px;
+    }
+
+    .back__call {
+        padding: 5px 3px;
+        font-size: 10px;
+    }
+    
+    .phone {
+        margin-right: 10px;
+    }
+
     .popular__wrapper {
         flex-direction: column;
+    }
+
+    .contact__block {
+        padding: 10px;
+        width: 230px;
+        height: auto;
+        top: 110px;
+    }
+
+    .contact__header {
+        margin-left: 25px;
+    }
+
+    .contact__header,
+    .contact__phone-block {
+        font-size: 15px;
+    }
+
+    .contact__address,
+    .contact__email {
+        font-size: 11px;
     }
 }
