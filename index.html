@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прием макулатуры</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,7 +76,7 @@
             <div class="container">
                 <h2 class="availability__header section__title">Уберем, погрузим и вывезем любой вид мусора</h2>
                 <div class="availability__products">
-                    <div class="availability__product">
+                    <div class="availability__product wow bounceInUp" data-wow-delay="0.1s">
                         <img src="img/content/product-1.jpg" alt="Первый продукт" class="availability__product-img">
                         <div class="availability__product-description">
                             <h3 class="availability__product-header">Бытовой мусор</h3>
@@ -88,7 +89,7 @@
                         </div>
                         <a href="#" class="availability__product-link button">Подробнее</a>
                     </div>
-                    <div class="availability__product">
+                    <div class="availability__product wow bounceInUp" data-wow-delay="0.2s">
                         <img src="img/content/product-2.jpg" alt="Второй продукт" class="availability__product-img">
                         <div class="availability__product-description">
                             <h3 class="availability__product-header">Строительный мусор</h3>
@@ -101,7 +102,7 @@
                         </div>
                         <a href="#" class="availability__product-link button">Подробнее</a>
                     </div>
-                    <div class="availability__product">
+                    <div class="availability__product wow bounceInUp" data-wow-delay="0.3s">
                         <img src="img/content/product-3.jpg" alt="Третий продукт" class="availability__product-img">
                         <div class="availability__product-description">
                             <h3 class="availability__product-header">Негабаритный мусор</h3>
@@ -121,17 +122,17 @@
             <div class="container">
                 <h2 class="advanatages__header section__title">Комплексный подход</h2>
                 <div class="advantages__wrapper">
-                    <div class="adnatage">
+                    <div class="adnatage wow fadeIn" data-wow-delay="0.1s">
                         <img src="img/icons/icon-1.png" alt="Низкая цена">
                         <div class="advantage__title">Низкая цена</div>
                         <div class="advantage__text">Мы сотрудничаем напрямую с производителем, поэтому можем гарантировать самую низкую цену.</div>
                     </div>
-                    <div class="adnatage">
+                    <div class="adnatage wow fadeIn" data-wow-delay="0.2s">
                         <img src="img/icons/icon-2.png" alt="Низкая цена">
                         <div class="advantage__title">Упаковка в мешки</div>
                         <div class="advantage__text">Весь товар уже находится на нашем складе. Нам остается только погрузить его и в путь!</div>
                     </div>
-                    <div class="adnatage">
+                    <div class="adnatage wow fadeIn" data-wow-delay="0.3s">
                         <img src="img/icons/icon-3.png" alt="Низкая цена">
                         <div class="advantage__title">Индивидуальный подход</div>
                         <div class="advantage__text">Вам нужны бесперебойные поставки или большая партия товара со скидкой? Мы найдем решение! </div>
@@ -174,15 +175,15 @@
             <div class="container">
                 <h2 class="services__header section__title">Подберем для Вас подходящую по цене и грузоподъемности машину</h2>
                 <div class="services__wrapper">
-                    <div class="service">
+                    <div class="service wow zoomIn" data-wow-delay="0.2s">
                         <img src="img/icons/image-1.png" alt="Гранитный щебень 5-20 мм">
                         <div class="popular__product-title">Идеально подходит если вы делаете мелкий ремонт, меняете окна, двери или просто хотите убрать накопившейся мусор</div>
                     </div>
-                    <div class="service">
+                    <div class="service wow zoomIn" data-wow-delay="0.4s">
                         <img src="img/icons/image-2.png" alt="Гранитный щебень 5-20 мм">
                         <div class="popular__product-title">Предназначена для накопления и вывоза мусора всех видов с большим весом и объемом</div>
                     </div>
-                    <div class="service">
+                    <div class="service wow zoomIn" data-wow-delay="0.6s">
                         <img src="img/icons/image-3.png" alt="Гранитный щебень 5-20 мм">
                         <div class="popular__product-title">Предназначен для вывоза мусора после средних и крупных ремонтов. Удобен своей мобильностью</div>
                     </div>
@@ -234,5 +235,14 @@
             </div>
         </footer>
     </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Hello, I am a modal!</h1>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
