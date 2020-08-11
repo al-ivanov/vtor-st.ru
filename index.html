@@ -239,7 +239,21 @@
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <h1>Hello, I am a modal!</h1>
+            <form action="#" method="post" class="modal__form">
+                <h2>Оставить заявку</h2>
+                <div class="modal__name">
+                    <input type="text" name="user_name" id="user_name" class="user__name" placeholder="Ваше имя" required>
+                </div>
+                <div class="modal__phone">
+                    <input type="tel" name="user_phone" id="user_phone" class="user__phone" placeholder="Ваш телефон" pattern="" required>
+                </div>
+                <div class="modal__prim">
+                    <textarea name="user_prim" id="prim" cols="30" rows="4" class="modal__textarea"></textarea>
+                </div>
+                <div class="modal__send">
+                    <input type="submit" name="send__button" class="button button__modal" value="Отправить">
+                </div>
+            </form>
         </div>
     </div>
     <script src="js/wow.min.js"></script>

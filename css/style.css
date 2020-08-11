@@ -415,7 +415,7 @@ a {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 30%;
     border-radius: 0.5rem;
 }
 .close-button {
@@ -431,6 +431,39 @@ a {
 .close-button:hover {
     background-color: darkgray;
 }
+
+.user__name,
+.user__phone {
+    background: #F7F7F7;
+    border: solid 1px #f7f7f7;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal__textarea {
+    background: #F7F7F7;
+    border: solid 1px #f7f7f7;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal__send {
+    display: flex;
+    justify-content: center;
+}
+
+.button__modal {
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
 .show-modal {
     opacity: 1;
     visibility: visible;
