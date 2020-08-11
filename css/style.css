@@ -476,11 +476,19 @@ a {
     .services__wrapper {
         justify-content: center;
     }
+
+    .modal-content {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width:768px) {
     .back__call {
         padding: 13px 5px;
+    }
+
+    .modal-content {
+        width: 50%;
     }
 }
 
@@ -555,6 +563,10 @@ a {
     .contact__address, .contact__email{
         margin-top: 10px;
     }
+
+    .modal-content {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -608,5 +620,9 @@ a {
     .contact__address,
     .contact__email {
         font-size: 11px;
+    }
+
+    .modal-content {
+        width: 80%;
     }
 }
