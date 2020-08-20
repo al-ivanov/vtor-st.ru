@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -169,6 +173,11 @@ a {
     color: var(--text-color-black);
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(253, 168, 36, 1);
 }
 
 .main__banner-catalog {
@@ -262,6 +271,25 @@ a {
     margin-top: 25px;
 }
 
+.cooperation {
+    background: url('../img/bg/coop_bg.webp') center center / cover no-repeat;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.cooperation__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cooperation__link {
+    padding: 8px 20px;
+}
+
 .popular {
     padding-top: 70px;
     padding-bottom: 78px;
@@ -303,6 +331,21 @@ a {
     border: 2px solid #fff;
     padding: 50px 60px;
     margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.service:hover {
+    background-color: #fff;
+}
+
+.service i {
+    font-size: 85px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.service i:hover {
+    color: var(--main-color-yellow)
 }
 
 .map {

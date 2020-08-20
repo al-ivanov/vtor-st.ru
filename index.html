@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,46 +33,68 @@
                 <nav class="main__nav">
                     <ul class="main__menu-list">
                         <li class="main__menu-item">
-                            <a href="#" class="main__menu-link">О компании</a>
+                            <a href="#about" class="main__menu-link">О компании</a>
                         </li>
                         <li class="main__menu-item">
-                            <a href="#" class="main__menu-link">Почему мы</a>
+                            <a href="#whywe" class="main__menu-link">Почему мы</a>
                         </li>
                         <li class="main__menu-item">
-                            <a href="#" class="main__menu-link">Закупаем</a>
+                            <a href="#buy" class="main__menu-link">Закупаем</a>
                         </li>
                         <li class="main__menu-item">
-                            <a href="#" class="main__menu-link">Сотрудничество</a>
+                            <a href="#coop" class="main__menu-link">Сотрудничество</a>
                         </li>
                         <li class="main__menu-item">
-                            <a href="#" class="main__menu-link">Контакты</a>
+                            <a href="#contacts" class="main__menu-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </section>
-        <section class="main__banner">
+        <section class="main__banner" id="about">
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="main__banner-content">
-                    <h1 class="main__banner-text">Вывезем строительный мусор за 2 часа</h1>
+                    <h1 class="main__banner-text">Закупаем</h1>
                     <div class="banner__description">
-                        <div class="banner__description--first">Бетон, щебень, песок</div>
-                        <div class="banner__description--first">и другие материалы </div>
-                        <div class="banner__description--first">в Смоленске</div>
+                        <div class="banner__description--first">Макулатуру</div>
+                        <div class="banner__description--first">Лом различных металлов и полимеры </div>
+                        <div class="banner__description--first">в Смоленске у организаций и физических лиц</div>
                     </div>
                     <div class="main__banner-button-wrapper">
-                        <a href="#" class="main__banner-button button">
-                            Подробнее о доставке
+                        <a href="#" class="main__banner-button button back__call-button">
+                            Подробнее
                         </a>
-                        <div class="main__banner-catalog">
+                        <!-- <div class="main__banner-catalog">
                             <span>или</span> <a href="#" class="main__banner-catalog-link">перейти в каталог</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="availability">
+        <section class="services" id="whywe">
+            <div class="container">
+                <h2 class="services__header section__title">Почему мы</h2>
+                <div class="services__wrapper">
+                    <div class="service wow zoomIn" data-wow-delay="0.2s">
+                        <!-- <img src="img/icons/image-1.png" alt="Гранитный щебень 5-20 мм"> -->
+                        <i class="fas fa-user-tie"></i>
+                        <div class="popular__product-title">Многолетний опыт работы на рынке вторсырья Смоленской области</div>
+                    </div>
+                    <div class="service wow zoomIn" data-wow-delay="0.4s">
+                        <!-- <img src="img/icons/image-2.png" alt="Гранитный щебень 5-20 мм"> -->
+                        <i class="fas fa-thumbs-up"></i>
+                        <div class="popular__product-title">Гарантия бесперебойного вывоза вторсырья</div>
+                    </div>
+                    <div class="service wow zoomIn" data-wow-delay="0.6s">
+                        <!-- <img src="img/icons/image-3.png" alt="Гранитный щебень 5-20 мм"> -->
+                        <i class="fas fa-truck"></i>
+                        <div class="popular__product-title">Собственный автопарк и грузчики</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="availability" id="buy">
             <div class="container">
                 <h2 class="availability__header section__title">Закупаем</h2>
                 <div class="availability__products">
@@ -80,13 +103,13 @@
                         <div class="availability__product-description">
                             <h3 class="availability__product-header">Макулатура</h3>
                             <div class="availability__product-text">
-                                Бытовая техника, сантехника, мауклатура, упаковка
+                                картон, книги, журналы, газетв, архив и др.
                             </div>
                             <!-- <div class="availability__product-price">
                                 от 330 р./т
                             </div> -->
                         </div>
-                        <a href="#" class="availability__product-link button">Подробнее</a>
+                        <a href="#" class="availability__product-link button back__call-button">Подробнее</a>
                     </div>
                     <div class="availability__product wow bounceInUp" data-wow-delay="0.2s">
                         <img src="img/content/product-1.jpg" alt="Стекло" class="availability__product-img">
@@ -99,7 +122,7 @@
                                 от 330 р./т
                             </div> -->
                         </div>
-                        <a href="#" class="availability__product-link button">Подробнее</a>
+                        <a href="#" class="availability__product-link button back__call-button">Подробнее</a>
                     </div>
                     <div class="availability__product wow bounceInUp" data-wow-delay="0.3s">
                         <img src="img/content/product-2.jpg" alt="Металлолом" class="availability__product-img">
@@ -112,12 +135,23 @@
                                 от 330 р./т
                             </div> -->
                         </div>
-                        <a href="#" class="availability__product-link button">Подробнее</a>
+                        <a href="#" class="availability__product-link button back__call-button">Подробнее</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="advantages">
+        <section class="cooperation wow fadeIn" id="coop" data-wow-delay="0.3s">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="cooperation__content">
+                    <h2 class="advanatages__header section__title">Сотрудничество</h2>
+                    <h3>В наших силах сделать мир экологичнее и сохранить его красоту для будущих поколений!</h3>
+                    <p>приглашаем региональных партнеров к выгодному сотрудничеству</p>
+                    <a href="#" class="cooperation__link button back__call-button">Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="advantages">
             <div class="container">
                 <h2 class="advanatages__header section__title">Комплексный подход</h2>
                 <div class="advantages__wrapper">
@@ -138,7 +172,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="popular">
             <div class="container">
                 <h2 class="popular__header section__title">Популярные товары</h2>
@@ -170,26 +204,8 @@
                 </div>
             </div>
         </section> -->
-        <section class="services">
-            <div class="container">
-                <h2 class="services__header section__title">Подберем для Вас подходящую по цене и грузоподъемности машину</h2>
-                <div class="services__wrapper">
-                    <div class="service wow zoomIn" data-wow-delay="0.2s">
-                        <img src="img/icons/image-1.png" alt="Гранитный щебень 5-20 мм">
-                        <div class="popular__product-title">Идеально подходит если вы делаете мелкий ремонт, меняете окна, двери или просто хотите убрать накопившейся мусор</div>
-                    </div>
-                    <div class="service wow zoomIn" data-wow-delay="0.4s">
-                        <img src="img/icons/image-2.png" alt="Гранитный щебень 5-20 мм">
-                        <div class="popular__product-title">Предназначена для накопления и вывоза мусора всех видов с большим весом и объемом</div>
-                    </div>
-                    <div class="service wow zoomIn" data-wow-delay="0.6s">
-                        <img src="img/icons/image-3.png" alt="Гранитный щебень 5-20 мм">
-                        <div class="popular__product-title">Предназначен для вывоза мусора после средних и крупных ремонтов. Удобен своей мобильностью</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="map">
+        
+        <section class="map" id="contacts">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A65c04d808bda3f3ae33e281cf4b83dd1c5223b5e4735b266bbeaa8300a36b0f2&amp;width=100%25&amp;height=515&amp;lang=ru_RU&amp;scroll=true"></script>
             <div class="contact__block">
                 <h2 class="contact__header">контакты</h2>

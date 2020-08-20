@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     let modal = document.querySelector(".modal"),
-        trigger = document.querySelectorAll(".back__call"),
+        trigger = document.querySelectorAll(".back__call, .back__call-button"),
         closeButton = document.querySelector(".close-button");
     
-    function toggleModal() {
+    function toggleModal(e) {
+        e.preventDefault();
         modal.classList.toggle("show-modal");
     }
 
