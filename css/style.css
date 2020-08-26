@@ -694,6 +694,11 @@ a {
     color: #006699;
 }
 
+.form-success {
+    display: none;
+    text-align: center;
+}
+
 @media screen and (max-width:900px) {
     .popular__wrapper,
     .services__wrapper {

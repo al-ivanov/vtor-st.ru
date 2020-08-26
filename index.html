@@ -15,7 +15,7 @@
         <section class="top-side">
             <div class="container">
                 <header class="header">
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="img/logos/logo.png" class="logo__pic" alt="Логотип сайта">
                     </a>
                     <div class="header__contacts">
@@ -62,8 +62,8 @@
                 <div class="main__banner-content">
                     <h1 class="main__banner-text">Закупаем</h1>
                     <div class="banner__description">
-                        <div class="banner__description--first">Макулатуру</div>
-                        <div class="banner__description--first">Лом различных металлов и полимеры </div>
+                        <div class="banner__description--first">Макулатуру: картон, бумага, архив, книги, бумажную упаковку и др.</div>
+                        <div class="banner__description--first">Отходы полиэтилена, канистры пластиковые, стретч пленка, ПВД пленка, ПНД пленка и др.</div>
                         <div class="banner__description--first">в Смоленске у организаций и физических лиц</div>
                     </div>
                     <div class="main__banner-button-wrapper">
@@ -261,25 +261,29 @@
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <form action="#" method="post" class="modal__form">
+            <form action="mailer/smart.php" method="post" class="modal__form">
                 <h2>Оставить заявку</h2>
                 <div class="modal__name">
                     <input type="text" name="user_name" id="user_name" class="user__name" placeholder="Ваше имя" required>
                 </div>
                 <div class="modal__phone">
-                    <input type="tel" name="user_phone" id="user_phone" class="user__phone" placeholder="Ваш телефон" pattern="" required>
+                    <input type="tel" name="user_phone" id="user_phone" class="user__phone" placeholder="Ваш телефон" required>
                 </div>
                 <div class="modal__prim">
                     <textarea name="user_prim" id="prim" cols="30" rows="4" class="modal__textarea"></textarea>
                 </div>
                 <div class="modal__conf">
                     <input type="checkbox" name="modal__conf-checkbox" id="modal__conf-checkbox" class="modal__conf-checkbox" checked>
-                    <span class="modeal__conf-text">Согласен на обрабобку моих персональных данных в соответствии с ФЗ №152 на условиях и для целей определенных в <a href="#" class="modal__conf-link">политике конфиденциальности</a></span>
+                    <span class="modeal__conf-text">Согласен на обрабобку моих персональных данных в соответствии с ФЗ №152 на условиях и для целей определенных в <a href="politics.html" class="modal__conf-link">политике конфиденциальности</a></span>
                 </div>
                 <div class="modal__send">
                     <input type="submit" name="send__button" class="button button__modal" value="Отправить">
                 </div>
             </form>
+            <div class="form-success">
+                <img src="img/icons/success.png" alt="Успешная отправка заявки">
+                <p>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время</p>
+            </div>
         </div>
     </div>
     <script src="js/wow.min.js"></script>
