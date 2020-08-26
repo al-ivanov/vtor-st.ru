@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let modal = document.querySelector(".modal"),
+    const modal = document.querySelector(".modal"),
         trigger = document.querySelectorAll(".back__call, .back__call-button"),
-        closeButton = document.querySelector(".close-button");
+        closeButton = document.querySelector(".close-button"),
+        fadeSliderItems = document.querySelectorAll(".fade-slider__item");
+    let index = 0;
     
     function toggleModal(e) {
-        e.preventDefault();
+        if (e !== undefined)
+            e.preventDefault();
         modal.classList.toggle("show-modal");
     }
 
@@ -21,4 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("click", windowOnClick)
 
     new WOW().init();
+
+    setInterval(() => {
+        fadeSliderItems[index].classList.remove("fade-slider__item--visible");
+        index++;
+        index = index > fadeSliderItems.length - 1 ? 0 : index;
+        fadeSliderItems[index].classList.add("fade-slider__item--visible");
+    }, 5000);
+
 });
