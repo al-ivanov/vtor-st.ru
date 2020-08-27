@@ -25,7 +25,7 @@ html, body {
 }
 
 body {
-    font: 20px / 1.42 'avanti', Arial, sans-serif;
+    font: 24px / 1.42 'avanti', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
@@ -97,12 +97,12 @@ a {
 }
 
 .phone__number {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .phone__content {
-    font-size: 11px;
+    font-size: 15px;
     color: #969696;
 }
 
@@ -470,7 +470,11 @@ a {
     right: 0;
     width: 380px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
+}
+
+.contact__block h2 {
+    margin: 10px 10px;
 }
 
 .contact__header {
@@ -515,10 +519,10 @@ a {
 
 
 .footer {
-    height: 200px;
     background-color: #292929;
     color: #fff;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .footer__wrapper {
@@ -549,6 +553,11 @@ a {
 
 .phone__number--white {
     margin-right: 0;
+    font-size: 22px;
+}
+
+.phone__content--white {
+    font-size: 18px;
 }
 
 .back__call--white {
@@ -593,6 +602,7 @@ a {
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
     z-index: 2;
 }
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -720,6 +730,35 @@ a {
     .modal-content {
         width: 50%;
     }
+
+    .main__banner {
+        height: 580px;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .main__nav {
+        font-size: 18px;
+    }
+
+    .main__banner {
+        height: 610px;
+    }
+
+    .back__call {
+        padding: 13px 2px;
+        font-size: 16px;
+    }
+
+    .phone__number {
+        font-size: 18px;
+    }
+
+    .phone__content {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width:576px) {
@@ -803,6 +842,7 @@ a {
         padding: 30px;
         width: 260px;
         height: auto;
+        font-size: 16px;
     }
 
     .contact__address, .contact__email{
@@ -825,8 +865,8 @@ a {
         font-size: 10px;
     }
     
-    .phone {
-        margin-right: 10px;
+    .phone__number {
+        font-size: 11.3px;
     }
 
     .main__menu-link {
@@ -836,6 +876,10 @@ a {
 
     .main__banner {
         margin-top: 0;
+    }
+
+    .main__banner-content {
+        top: 60px;
     }
 
     .main__banner-button {
@@ -855,8 +899,7 @@ a {
 
     .contact__block {
         padding: 10px;
-        width: 230px;
-        height: auto;
+        width: 50%;
         top: 110px;
     }
 
@@ -866,7 +909,7 @@ a {
 
     .contact__header,
     .contact__phone-block {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .contact__address,
@@ -874,13 +917,29 @@ a {
         font-size: 11px;
     }
 
+    .phone__number--white {
+        font-size: 16px;
+    }
+
+    .phone__content--white {
+        font-size: 11px;
+    }
+
+    .modal__form h2 {
+        font-size: 22px;
+    }
+
     .modal-content {
-        width: 80%;
+        width: 90%;
     }
 }
 
-@media screen and (max-width:300px) {
-    .phone__number {
+@media screen and (max-width: 330px) {
+    .copyright {
         font-size: 13px;
+    }
+
+    .phone {
+        margin-right: 7px;
     }
 }

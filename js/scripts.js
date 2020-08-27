@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(".modal"),
-        trigger = document.querySelectorAll(".back__call, .back__call-button"),
+        trigger = document.querySelectorAll(".back__call"),
         closeButton = document.querySelector(".close-button"),
         fadeSliderItems = document.querySelectorAll(".fade-slider__item"),
         modalForm = document.querySelector(".modal__form"),
